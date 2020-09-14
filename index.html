@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--META-->
+        <meta charset="UTF-8">
+        <meta name="author" content="João Eugênio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- PAG ICO -->
+        <link rel="shortcut icon" href="assets/image/logopreta.png" type="image/x-icon">
+        <!-- STYLES -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+
+        <!-- FONT -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <title>Good Dreams - Checkout</title>
+    </head>
+    <body>
+  
+        <!-- NAV -->
+        <nav>
+            <ul>
+                <a href="index.html"><img src="assets/image/logopreta.png" class="logopreta" alt="logopreta" width="51" height="51"></a>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Opções</a></li>
+            </ul>
+        </nav>
+
+        <!-- HEADER -->
+        <header>
+            <div id="mds">
+                <div class="logocentral">
+                    <a href="index.html"><img src="assets/image/logobranca.png" alt="logocentral" width="350" height="350"></a>
+                </div>
+            </div>
+            <div class="follow">
+                <p>Muito bem, agora siga com sua(s) compra(s) !</p>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+        
+                <!-- SECTIONS -->
+                <div class="based-section">
+                    <!-- FIRST SECTION -->
+                    <section id="adress">
+                        <h2 class="minimalSpace">1. Endereço de Entrega</h2>
+                        <p><label>Por favor, insira os dados referentes ao endereço da entrega: </label></p>
+                        <form action="#">
+                            <p><label>CEP</label></p>
+                            <input type="text" name="#" id="cep" placeholder="Digite seu CEP" required maxlength="9">
+
+                            <p><label>Rua</label></p>
+                            <input type="text" name="#" id="rua" placeholder="Digite sua Rua" required>
+
+                            <p><label>Número</label></p>
+                            <input type="text" name="#" id="numerocasa" placeholder="Digite o Número de sua Casa" required>
+
+                            <p><label>Complemento (Opcional)</label></p>
+                            <input type="text" name="#" id="complemento" placeholder="Complemento (Opcional)">
+
+                            <p><label>Bairro</label></p>
+                            <input type="text" name="#" id="bairro" placeholder="Digite seu Bairro" required> 
+
+                            <p><label>Cidade</label></p>
+                            <input type="text" name="#" id="cidade" placeholder="Digite sua Cidade" required>
+
+                            <p><label>Estado</label></p>
+                           
+                            <select id="estado" name="#" required>
+                                <option value="NULL">Escolha seu Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        
+                            <p><button type="submit">Salvar Dados</button></p>
+                        </form>
+                    </section>
+
+                    <!-- SECOND SECTION -->
+                    <section id="method">
+                        <h2>2. Método de Pagamaneto</h2>
+                        
+                        <p><label>Selecione o cartão que fará o pagamento de sua compra:</label></p>
+
+                        <!-- VISA -->
+                        <div class="creditcard">
+                        <ul class="payment-methods">
+                            <li class="payment-method visa">
+                            <input name="payment_methods" type="radio" id="visa">
+                            <label for="visa">Visa</label>
+                            </li>
+
+                            <!-- NUBANK -->
+                            <li class="payment-method nubank">
+                            <input name="payment_methods" type="radio" id="nubank">
+                            <label for="nubank">NuBank</label>
+                            </li>
+
+                            <!-- MASTERCARD -->
+                            <li class="payment-method mastercard">
+                                <input name="payment_methods" type="radio" id="mastercard">
+                                <label for="mastercard">MasterCard</label>
+                            </li>
+                        
+
+                            <!-- ITAÚ -->
+                        <p><li class="payment-method itau">
+                            <input name="payment_methods" type="radio" id="itau">
+                            <label for="itau">Itaú</label>
+                            </li>
+
+                            <!-- CAIXA -->
+                            <li class="payment-method caixa">
+                            <input name="payment_methods" type="radio" id="caixa">
+                            <label for="caixa">Caixa</label>
+                            </li>
+
+                            <!-- ELO -->
+                            <li class="payment-method elo">
+                                <input name="payment_methods" type="radio" id="elo">
+                                <label for="elo">Elo</label>
+                            </li></p>
+                            </ul>
+                        </div>
+                        <form class="form_card" action="#">
+                            <p><label>Número do Cartão</label></p>
+                            <input type="text" name="#" id="cardnumber" placeholder="XXXX XXXX XXX XXX" required maxlength="17">
+
+                            <p><label>CVV</label></p>
+                            <input type="text" name="#" id="cvv" placeholder="Digite o Valor de Verificação do Cartão (XXX)" required maxlength="3">
+
+                            <p><label>Data de Vencimento</label></p>
+                            <input type="text" name="#" id="expiredate" placeholder="XX/XXXX" required maxlength="7">
+
+                            <p><label>CPF</label></p>
+                            <input type="text" name="#" id="cpf" placeholder="Digite seu CPF" required maxlength="11">
+
+                            <button type="submit">Salvar Dados</button>
+                        </form>
+                    </section>
+                    <!-- SCRIPT -->
+                        <!-- JS -->
+                            <script src="assets/js/mask.js"></script>
+
+
+                    <!-- THIRD SECTION -->                        
+                    <section id="product">
+                        <h2>3. Produto</h2>
+                    <div class="titlepxroduct">
+                        <p>Jogo de Cama do Batman </p>
+                    </div>
+                        <img class="img-product" src="assets/image/jogobatman.jpg" alt="camabatman" width="155" height="155">
+                        <div class="textocama">
+                            <p>O Lendário Homem Morcego da DC, Batman, aqui apresentado em uma versão alternativa, uma versão Fofa da personagem.</p>
+                                <p>Está é uma escolha perfeita, pois a roupa de cama é extremamente bonita, altamente combinável e o melhor de tudo, um precinho que cabe no seu bolço. Detalhes:</p>
+                                <ul>
+                                    <li>Marca: Warner</li>
+                                    <li>Composição: 100% Algodão</li>
+                                    <li>1 Lençol Com Elástico 90X190 Cm 20 Cm de Altura</li>
+                                    <li>-1 Fronha 50X70 Cm</li>
+                                </ul>
+                        </div>
+                        <div class="infoprod">
+                            <p>Preço: R$39,90</p>
+                            <p>Quantidade: 1 Unidade</p>
+                            <p>Parcela(s): 1x</p>
+
+                                <div class="infofrete">
+                                    <p>Frete: Até 12 dias úteis</p>
+                                    <p>Valor do Frete: R$15,00</p>
+                                </div>
+                            <p class="valorfinal">Valor Total da Compra: R$54,90</p>
+                            <form action="#">
+                                <p><button type="submit">COMPRAR</button></p>
+                            </form>
+                                <div class="direitos">
+                                <p><a href="index.html" target="_blank" rel="noopener noreferrer">Ao clicar em comprar, você automaticamente concorda com os termos de licença da empresa.</a></p>
+                                </div>
+                        </div>
+                    </section>
+                </div> 
+            
+        </main>
+        
+        <!-- FOOTER -->
+        <footer>
+            <ul>
+                    <li><a href="https://www.facebook.com" target="blank"><img src="assets/image/facebook.svg" alt="facebook" width="40" height="40"></a></li>
+                    <li><a href="https://www.instagram.com" target="blank"><img src="assets/image/instagram.svg" alt="instagram" width="40" height="40"></a></li>
+                    <li><a href="https://www.whatsapp.com" target="blank"><img src="assets/image/whatsapp.svg" alt="whatsapp" width="40" height="40"></a></li>
+                    <li><a href="https://www.twitter.com" target="blank"><img src="assets/image/twitter.svg" alt="twitter" width="40" height="40"></a></li>
+                    <li><a href="https://www.youtube.com" target="blank"><img src="assets/image/youtube.svg" alt="youtube" width="40" height="40"></a></li>
+            </ul>
+            <div class="foot_rights">
+                <p>Todos os Direitos Reservados &copy; <a href="index.html">GOOD DREAMS</a> - 2020</p>
+            </div>
+        </footer>
+
+    
+    </body>
+</html>
